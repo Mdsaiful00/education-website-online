@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+
+:root {
+    --blue: #323a60;
+    --pink: #ff55ebe2;
+    --drak-pink: #513868;
+    --backgroud: linear-gradient(90deg, var(--drak-pink), var(--blue));
+}
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;text-decoration: none; text-transform: capitalize; border: none;  box-sizing: border-box; outline: none; transition: all .2s linear;
+}body {
+    background: var(--backgroud);  padding: 3rem 7%; overflow: hidden;
+
+}
+
+html {font-size: 62.7%;overflow-x: hidden;scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}html::-webkit-scrollbar {
+    width: 1rem;
+}html::-webkit-scrollbar-thumb {
+    background: var(--pink); border-radius: 5rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--blue);
+}
+
+.btn {
+    display: inline-block; padding: 1rem 3rem;
+    border-radius: .5rem;color: #fff; background: var(--pink);  font-size: 1.7rem; margin: 1rem 0; letter-spacing: .1rem; cursor: pointer;
+
+}.btn:hover {
+    background-color: var(--drak-pink);
+}section {
+    padding: 2rem 7%;
+}.container {
+    background: #090b17;
+    border-radius: .5rem; box-shadow: 0 0 .5rem .1rem rgba(0, 0, 0, .2); 
+}header {
+    position: relative;  z-index: 1200;
+    left: 0;  right: 0;
+    padding: 2rem 5%; top: 0; width: 100%; display: flex;
+    align-items: center;border-bottom: .1rem solid var(--drak-pink);   justify-content: space-between;
+
+}
+
+header .logo {
+    font-size: 2.5rem; color: var(--drak-pink);  font-weight: 600;
+}
+
+header .logo span {color: var(--pink);
+}header .navbar a {
+    font-size: 2rem;
+    color: var(--drak-pink);
+    margin: 0 1rem;
+    display: inline-block;
+}header .navbar a:hover {
+    color: var(--pink);
+}
+
+header .icons div {  width: 3.5rem;  height: 3.5rem;cursor: pointer;  text-align: center;
+    font-size: 1.5rem; color: #fff; display: inline-block;
+    line-height: 3.5rem;border-radius: 50%;background-color: var(--pink); margin: 0 .5rem;
+}header .icons div:hover {
+    background-color: var(--drak-pink);
+}
+
+header .user-box {
+    position: absolute;top: 110%;  display: flex; z-index: 12001;gap: 1.5rem;align-items: center;
+    right: 3rem; border: .1rem solid rgba(0, 0, 0, .2);
+    padding: 2rem;border-radius: .5rem;
+    border:.1rem solid var(--drak-pink); background: var(--blue);transform: scaleY(0);
+}header .user-box.active {
+    transform: scaleY(1);
+}
+
+header .user-box .btn {
+    border: .1rem solid var(--pink);
+}
+
+#btn-bars {
+    display: none;
+}
+
+header 
+form {
+    position: absolute; top: 110%; width: 32rem; right: 5rem; display: flex;align-items: center;justify-content: space-between; 
+    height: 4rem;
+   border-radius: .5rem; box-shadow: 0 0 .5rem .1rem rgba(0, 0, 0, .1);
+    background: var(--drak-pink); align-items: center;
+   border: .1rem solid rgba(0, 0, 0, .1);transform: scaleY(0);
+}
+header form .box-1::placeholder{
+    color: #eeebffae;
+}
+header  
+form.active {
+    transform: scaleY(1);}
+
+header form .box-1 {
+    background: transparent;width: 100%;
+    height: 100%; padding: 0 1rem; text-transform: none;font-size: 1.5rem;   color: #eeebffae;}header form label {
+    font-size: 2rem; margin-right: 1rem;
+   
+    color: var(--pink);cursor: pointer;
+    
+}
+
+header form label:hover {color: #eeebffae;
+    
+}
+
+.learning .box-container {
+    margin:1rem 0 ;
+    display: flex; flex-wrap: wrap; gap: 1.5rem;align-items: center;
+   
+}.content{   flex: 1 1 42rem;}.image{flex: 1 1 42rem;}
+
+              .image img{ width: 100%;}
+
+
+.content h3{
+    font-size: 4rem;
+    color: var(--pink);
+}
+.content p{font-size: 1.7rem; color: var(--drak-pink);padding: 1rem; 
+line-height: 2;} 
+ .footer .box-container{display: flex; gap: 1.5rem; align-items: flex; flex-wrap: wrap;padding: 2rem 0 ; } .footer .box-container .box a{
+    display: block; margin: 1.5rem 0;
+    color: var(--drak-pink);
+    font: 500  ; font-size: 1.5rem;
+ }.footer .box-container .box a:hover{
+    color: var(--pink);
+ }
+  .footer .box-container .box a i{
+    color: var(--pink); padding-right: 1rem; 
+
+ }
+ .footer .box-container .box{ flex: 1 1 20rem;} .footer .box-container .box h3{font-size: 2.5rem; color: #eeebffae;
+}.footer .box-container .box p{
+    font-size: 1.7rem;
+    padding: 1rem 0;
+       color: var(--drak-pink);
+} .footer .box-container .box a:hover i{
+    padding-right: 2rem;
+} .footer .create{
+    text-align: center;font-size: 1.7rem; color: var(--drak-pink);padding: 1rem 0;
+    line-height: 2;border-top: .1rem solid var(--drak-pink);
+    margin-top:1rem ;
+}.footer .create span{
+    color: var(--pink);
+}
+
+.courses .box-container {
+    display: grid; align-items: center; padding: 2rem 0;
+    gap: 1.5rem ; grid-template-columns: repeat(auto-fit, minmax(27rem ,1fr));
+}
+
+.courses .box-container .box {
+    border: .1rem  solid var(--pink);padding: 2rem;border-radius: .5rem;position: relative; overflow: hidden;} .courses .box-container .box .image{
+    width: 100%;  height: 20rem;
+}.courses .box-container .box .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+} .courses .box-container .box .content-1 .icons i{color: var(--pink);padding: 1rem 0 ; margin-left: .3rem; font-size: 1.5rem;}
+    .courses .box-container .box .content-1{
+        border-bottom: .1rem solid var(--drak-pink);
+        padding-bottom: 1rem;
+    }
+.courses .box-container .box .content-1 h3{
+    font-size: 2rem;
+    color: #eeebffae;
+} .courses .box-container .box .content-1 p{font-size: 1.5rem; color: var(--drak-pink); padding: 1rem 0; line-height:  1.3; text-align: left;}
+
+.courses .box-container .box .items{
+    display: flex;align-items: center;justify-content: space-between; margin-top: 2rem;
+}.courses .box-container .box .items div{
+    color:var(--drak-pink);
+    font-size: 1.5rem;
+} .courses .box-container .box .items div i{
+    margin-right: .5rem;
+    color: var(--pink);
+}
+.courses .box-container .box .pirce{
+    position: absolute; background: var(--pink);font-size: 2rem;font-weight: 500;color: #eeebffae; padding: .5rem 1rem;border-radius: .5rem;
+    right:-10rem;bottom: 8rem ;
+}.courses .box-container .box:hover .pirce{
+    right: 3rem;
+} .headding {
+    position: relative; text-align: center;padding: 2rem 0;
+ z-index: 0;
+}.headding{
+    font-size: 5rem;color: #eeebffae;position: relative;
+}
+.headding span{color: var(--pink);}
+.teacher .box-container{
+    display: grid;  grid-template-columns: repeat(auto-fit, minmax(22rem,1fr)); gap: 1.5rem; padding: 1rem 0;
+}.teacher .box-container .box{
+   border-radius: .5rem;text-align: center;padding: 1rem;border: .1rem solid var(--pink);
+}.teacher .box-container .box img{
+    width: 9rem; height: 9rem; border-radius: 50%; margin: 1rem 0; object-fit: cover;
+}.teacher .box-container .box h3{font-size: 2rem; color:#eeebffae; } .teacher .box-container .box span{
+    color: var(--pink); font-size: 1.5rem; letter-spacing: .2rem; margin-top: .5rem;
+} .teacher .box-container .box p{
+    padding: 1rem 0; line-height: 1.5; font-size: 1.5rem; color: var(--drak-pink);
+}.teacher .box-container .box .icons i{
+    width: 3.5rem; height: 3.5rem ;line-height: 3.5rem; text-align: center; border-radius:1rem ;
+    color: #eeebffae; font-size: 2rem; margin: .5rem .5rem;
+    background: var(--pink); cursor: pointer;
+}.teacher .box-container .box .icons i:hover{
+    background-color: var(--blue); 
+}.price-2 .box-container{ 
+    display: flex; flex-wrap: wrap; gap: 1.5rem;
+ padding: 2rem 0;
+} .price-2 .box-container .box {
+flex: 1 1 30rem;
+text-align: center; border: .1rem solid var(--pink);} .price-2 .box-container .box h3{
+    font-size: 2.5rem; color: #eeebffae; padding: 1.7rem 0;
+} .price-2 .box-container .box .money {
+    font-size: 2.5rem; font-weight: bolder; color: coral; background: var(--blue); padding: 2rem 0 ;
+} .price-2 .box-container .box .money span span{font-size: 5rem;}
+.price-2 .box-container .box ul li{list-style: none;font-size: 2rem; margin: 1.5rem 0;
+    display: block;  color: var(--drak-pink); font-weight: lighter;
+} .price-2 .box-container .box ul{border-bottom: .1rem solid  var(--blue);} .price-2 .box-container .box .btn {
+    margin: 1.5rem 0;
+}.review .box-container .content-review .content-box i{font-size: 6rem; color: var(--pink);}
+.review .box-container{
+    display: grid; gap: 1.5rem; padding: 2rem 0; grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr)); 
+}
+.review .box-container .content-review{
+    border-radius: .5rem;
+    border: .1rem solid var(--pink); padding: 1rem; position: relative;} .review .box-container .content-review .content-box .box{
+        display: flex; align-items: center; gap: 2rem; margin-top: .7rem;
+    }
+.review .box-container .content-review .content-box{display: flex; align-items: center; justify-content: space-between;}.review .box-container .content-review .content-box img{
+    width: 8rem; height: 8rem; border-radius: 50%; object-fit: cover;
+}.review .box-container .content-review .content-box .info h3{font-size: 2rem; color: #eeebffae;} .review .box-container .content-review .content-box{
+    display: flex; align-items: center; justify-content: space-between;
+}.review .box-container .content-review .content-box .box span{font-size: 1.5rem; color: var(--pink);} .review .box-container .content-review p{
+    font-size: 1.7rem; color: var(--drak-pink); padding: 1rem 0; text-align: left;
+}
+.contact .box-container{
+    display: flex; gap: 1.5rem; flex-wrap: wrap; padding: 2rem 0; align-items:flex-start;
+} .contact .box-container .image{
+    flex: 1 1 40rem;
+} .contact .box-container .image img{width: 100%; height: 100%;} .contact .box-container .box-form{
+    flex: 1 1 40rem;
+    position: relative;
+    border-radius: .5rem;
+    background: #1c1c1c;
+    /* border: .1rem solid var(--pink); */
+    height: 45rem;
+    overflow: hidden;
+}
+.contact .box-container .box-form::before{
+    content:  ''; position: absolute; width: 100%; height: 45rem; background: linear-gradient(0deg,transparent,var(--pink),  var(--pink), var(--pink)); transform-origin: bottom left ;
+    animation: sai-1 5s linear infinite ; top: -50% ; right: -50%;
+}
+@keyframes sai-1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.contact .box-container .box-form::after{
+    content: '';
+      position: absolute; width: 100%; height: 45rem; top: -50%; right: -50%; animation: sai-1 5s linear infinite; background: linear-gradient(0deg, transparent,var(--pink),  var(--pink), var(--pink));
+      animation-delay: -3s ; transform-origin: bottom left;
+} .contact .box-container .box-form form{
+    background: #282928; position: absolute;z-index: 10;inset: .2rem;
+      border-radius: .5rem; text-align: center;
+      padding: 2rem;
+}.contact .box-container .box-form form .input-type{
+    display: flex; justify-content: space-between; flex-wrap: wrap; 
+}.contact .box-container .box-form form h3{font-size: 2.5rem; text-align: center; color: #eeebffae;}.contact .box-container .box-form form .input-type .input-box,
+.contact .box-container .box-form form  textarea{
+    width: 100%;
+    margin-top: 2rem;
+    border: .1rem solid #090b17;
+    text-transform: none;font-size: 1.5rem; color: #eeebffae; padding: .7rem; background:#090b17; border-radius: .5rem;outline: none; 
+}
+.contact .box-container .box-form form .input-type .input-box{
+    width: 49%;
+}.contact .box-container .box-form form textarea{resize: none; height: 18rem;}.contact .box-container .box-form form .input-type .input-box::placeholder,
+.contact .box-container .box-form form textarea::placeholder
+{
+    color: #eeebffae;
+}
+.contact .box-container .box-form form .input-type .input-box:focus, .contact .box-container .box-form form textarea:focus{
+    border: .1rem solid var(--pink);
+}
+
+.login-form .box-form{  margin: 0 auto; max-width:50rem;
+    position: relative; overflow: hidden;  height: 38rem;border-radius: .5rem;   margin-bottom: 3rem;
+}
+
+.login-form .box-form::before{
+  content: '' ; position: absolute; width: 100%; height:37rem;  top: -50%; left: -50%; background: linear-gradient(0deg, transparent, var(--pink),var(--pink),var(--pink) );
+  animation: sai-1 6s linear infinite; transform-origin: bottom right;
+}.login-form .box-form::after{
+  content: '';  position: absolute; width: 100%; height: 37rem; top: -50%; left: -50%; background: linear-gradient(0deg, transparent, var(--pink) ,var(--pink), var(--pink));
+  animation: sai-1 6s linear infinite; animation-delay: -3s; transform-origin: bottom right;
+}
+.login-form .box-form form{ background: #1c1c1c; inset: .2rem; 
+   z-index: 10; position: absolute; border-radius: .5rem; display: flex; flex-direction: column; padding: 2.5rem;
+   box-sizing: border-box;
+}
+.login-form .box-form form h3{
+    font-size: 3rem; color: var(--pink); letter-spacing: .12rem; text-align: center;
+}
+.login-form .box-form form .inputbox{width: 100%; position: relative; margin-top: 2.5rem ; box-sizing: border-box;} 
+.login-form .box-form form .inputbox input{
+ text-transform: none;  z-index: 10; font-weight: 600;  width: 100%; padding: 1.2rem 1rem 1rem; position: relative; border: none; outline: none; background: transparent; color: #282928; font-size: 1.7rem; letter-spacing: .1rem;
+}
+.login-form .box-form form .inputbox span{
+    position: absolute; left: 0; pointer-events: none; padding: 1.2rem 1rem 1rem;  font-size: 1.6rem; color: #eeebffae; letter-spacing: .1rem; transition: 0.5s;
+}
+.login-form .box-form form .inputbox input:valid ~ span,
+.login-form .box-form form .inputbox input:focus ~ span{
+ color: var(--pink);
+transform: translateX(-.8rem) translateY(-2.7rem);
+ font-size: 1.3rem;
+}.login-form .box-form form .inputbox  i{
+  position: absolute; left: 0 ; bottom: 0; height: .2rem; background: var(--pink); pointer-events: none; width: 100%; border-radius: .5rem; transition: 0.5s;
+}
+.login-form .box-form form input:focus ~ i,
+.login-form .box-form form input:valid ~ i{  height: 3.7rem;  z-index: 9; display: block;
+}
+.login-form .box-form form  .links {
+    display: flex;  justify-content: space-between; align-items: center;
+}.login-form .box-form form .links p {font-size: 1.5rem; color: #eeebffae;}
+.login-form .box-form form .links a{
+    font-size: 1.3rem; color: #eeebffae;
+    margin: 1.5rem 0;
+}.login-form .box-form form .btn{font-weight: 600; letter-spacing: .2rem; cursor: pointer;}
+.login-form .box-form form .text-1 a,
+.login-form .box-form form .text-2 a{
+    font-size: 1.5rem; color: #eeebffae; 
+    line-height: 1.5;
+}.login-form .box-form form .text-2 a { text-decoration: underline;}.login-form .box-form form .text-2 a:hover{color: var(--pink);}
+.login-form .box-form form .text-1 ,.login-form .box-form form .text-2{
+    text-align: left;
+}
+
+.register-from .box-form {
+    max-width: 45rem; height: 37rem ; margin: 1rem auto; background: #1c1c1c;
+    display: flex; align-content: center; justify-content: center; position: relative; overflow: hidden; border-radius: .5rem;
+}
+.register-from .box-form::before{
+    content: ''; position: absolute; width: 100%; height: 37rem; border-radius: .5rem; top: -50%; left: -50%;
+    background: linear-gradient(0deg, transparent, var(--pink),var(--pink),var(--pink)); animation: sai-1 6s linear infinite ; transform-origin: bottom right ;
+}
+.register-from .box-form::after{
+    content: ''; position: absolute; width: 100%; height: 37rem; top: -50%; left: -50%; background: linear-gradient(0deg, transparent, var(--pink),var(--pink),var(--pink)); animation: sai-1 6s linear infinite;
+    animation-delay:-3s ; transform-origin: bottom right;
+}
+.register-from .box-form form {
+    position: absolute; background:#282928;z-index: 10;  inset: .2rem;
+    border-radius: .5rem; padding: 2rem; text-align: center;
+}.register-from .box-form form .input-box{display: flex; align-items: center; margin-top: 2rem; background-color: #090b17; border-radius: .5rem; width:100%; justify-content: space-between; }
+.register-from .box-form form .input-box .box{width: 100%; background: transparent; pointer-events:fill; outline: none; padding: 1rem .3rem; font-size: 1.5rem; text-transform: none; color: #eeebffae; letter-spacing: .1rem; font-weight: 600;
+
+ }.register-from .box-form form h3{
+    font-size: 3rem; color: #eeebffae; letter-spacing: .1rem;
+ }.register-from .box-form form .input-box label{font-size: 2rem; color: var(--pink); margin: 0 1rem;}.register-from .box-form form .links{
+    display: flex; align-items: center; justify-content: space-between; margin: 1.5rem 0;
+ }.register-from .box-form form .links p, a{
+    font-size: 1.37em; color: #eeebffae; padding: 0 .5rem;
+ }.register-from .box-form form .btn{display: inline-block; width: 100%; margin-top: 1rem; cursor: pointer; font-weight: 600; letter-spacing: .1rem;
+ }
+
+ .theme-box{
+    position: fixed;
+    top: 15rem;
+    right: -15rem; width: 15rem; background: #090b17;
+    z-index: 12005; padding: 1rem ; text-align: center;
+ } .theme-box.active{
+    right: 5rem;
+ } .theme-box .buttons{
+   display: block; display: flex ; flex-wrap: wrap; gap: 1rem ; align-items: center; justify-content: center;
+ }
+ .theme-box .buttons .color-btn{  width: 3rem; height: 3rem; border-radius: 50%; cursor: pointer;} .theme-box h2{
+    font-size: 1.7rem; color: #eeebffae; margin-bottom: .7rem;
+ } .theme-box .theme-setting {
+    position: absolute;  left: -4.7rem;top: 0; background-color: #090b17;
+    
+ }.theme-box .theme-setting i{
+    font-size: 3rem ; color: var(--pink);  padding: 1rem; cursor: pointer; animation: sai-2 2s infinite linear;
+ }
+
+ @keyframes sai-2 {
+    0%{
+        transform: rotate(360deg);
+    }
+ }
+
+
+                        @media (max-width:1200px) {
+   
+        html{
+            font-size: 55%;
+        }
+       
+
+    }
+                    @media (max-width:1023px) {
+        html{
+            font-size: 54%;
+        }
+        body{
+            padding: 2.5rem 6%;
+        }
+        section{
+           padding: 1.9rem  6.5%;
+        }
+   }   
+   
+
+                       @media (max-width:768px) {
+    header form{
+        position: absolute;right: 1rem;
+        
+    }
+    body{
+        padding: 2rem 5%;
+    }
+    .contact .box-container .box-form form .input-type .input-box{
+        width:rem 100%;
+    }
+    .contact .box-container .box-form form textarea{
+        height: 8rem;
+    }
+    #btn-bars{
+        display: block;
+    }
+    .contact .box-container .box-form form .btn{
+        margin-bottom: 25rem;
+    }
+    .learning .box-container .contact{
+        text-align: center;
+    }
+    .headding{font-size: 3.7rem;}
+    html{
+        font-size: 53%;
+    }
+    header .user-box{
+        right: 1.5rem;
+    }
+    header .icons{display: flex; align-items: center;}
+   header .navbar{
+    position: absolute; top: 110%; left: 0; right: 0; background-color: #090b17; z-index: 12001; padding-bottom: 1rem;
+    height: 25rem; clip-path: polygon(0 0, 100% 0 , 100% 0 , 0 0);
+   }header .navbar a{display: block;  margin:1rem 0 ;  text-align: center; font-size: 2rem; font-weight: 600; transition: .5s; letter-spacing: .2rem;}
+   header .navbar.active{clip-path: polygon(0 0 , 100% 0, 100% 100% , 0 100%);}
+   header .navbar a:hover{
+    letter-spacing: .1rem; 
+   }
+
+
+}     
+
+
+               @media (max-width:480px) {
+        html{
+            font-size: 40%;
+        }
+        section{
+            padding: 1.7rem 6%;
+        }
+        body{
+            padding: 1.7rem 5%;
+        }
+}     
+    
